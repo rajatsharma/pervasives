@@ -1,4 +1,4 @@
-pub struct List<T>(Vec<T>);
+pub struct List<T>(pub Vec<T>);
 
 impl<T> List<T> {
     pub fn map<U>(&self, fmap: U) -> List<T>

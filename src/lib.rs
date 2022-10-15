@@ -4,6 +4,7 @@ pub mod list;
 #[cfg(test)]
 mod tests {
     use super::*;
+    use list::List;
 
     #[test]
     fn it_works() {
