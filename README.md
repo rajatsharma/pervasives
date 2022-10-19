@@ -3,5 +3,5 @@
 ## Installation
 
 ```shell
-cargo add https://github.com/rajatsharma/pervasives
+cargo add --git https://github.com/rajatsharma/pervasives
 ```
