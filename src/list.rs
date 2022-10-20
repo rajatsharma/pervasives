@@ -29,6 +29,6 @@ impl<T> List<T> {
 
 #[macro_export]
 macro_rules! list {
-    () => (::list::List(vec![]));
-    ($($x:literal),+ $(,)?) => (List(vec![$($x),+]));
+    () => ($crate::list::List(vec![]));
+    ($($x:literal),+ $(,)?) => ($crate::list::List(vec![$($x),+]));
 }

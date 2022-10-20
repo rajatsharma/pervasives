@@ -5,7 +5,6 @@ pub mod proc;
 #[cfg(test)]
 mod tests {
     use super::*;
-    use list::List;
 
     #[test]
     fn it_works() {
@@ -13,5 +12,7 @@ mod tests {
             .filter(|x| *x == 1)
             .map(|x| x * 2)
             .fold(0, |x, y| x + y);
+
+        let path = path!("hello" / "world");
     }
 }
