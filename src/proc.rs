@@ -9,3 +9,7 @@ pub fn call_command(command: &str) -> std::io::Result<Output> {
         .stderr(Stdio::inherit())
         .output()
 }
+
+pub fn call_command_(command: &str) -> Output {
+    call_command(command).expect(&format!("could not run: {}", command))
+}
