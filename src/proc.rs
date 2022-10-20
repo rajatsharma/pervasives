@@ -11,5 +11,5 @@ pub fn call_command(command: &str) -> std::io::Result<Output> {
 }
 
 pub fn call_command_(command: &str) -> Output {
-    call_command(command).expect(&format!("could not run: {}", command))
+    call_command(command).unwrap_or_else(|_| panic!("could not run: {}", command))
 }

@@ -13,7 +13,6 @@ pub fn current_dir_name_() -> String {
     let binding = current_dir().unwrap();
     binding
         .file_name()
-        .clone()
         .unwrap()
         .to_str()
         .unwrap()
